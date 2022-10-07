@@ -1,5 +1,27 @@
 import 'react-native-gesture-handler';
+
+import '@react-native-firebase/app';
+import firestore from '@react-native-firebase/firestore';
+
 import { registerRootComponent } from 'expo';
+
+// set the host and the port property to connect to the emulator
+//tratamento de erros se já houver um emulador em execução
+
+// if (__DEV__) {
+//   firestore().terminate().then(()=>{
+//     firestore().clearPersistence().then(()=>{
+//         firestore()    
+//         .useEmulator('localhost', 8090);
+//     }).catch(()=> {
+//         console.log('Clear persistence error')
+//     });
+//   }).catch(()=>{
+//     console.log('Terminate error')
+//   })
+// }
+
+// firestore();
 
 import App from './App';
 

@@ -1,0 +1,14 @@
+{
+  "emulators": {
+    "singleProjectMode": true,
+    "firestore": {
+      "port": 8090
+    },
+    "ui": {
+      "enabled": true
+    }
+  },
+   "react-native":{
+    "android_bypass_emulator_url_remap": true
+  }
+}
